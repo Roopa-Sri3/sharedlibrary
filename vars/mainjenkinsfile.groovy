@@ -1,5 +1,6 @@
-@Library('sharedlibrary') _
-pipeline{
+def call(){
+    @Library('sharedlibrary') _
+    pipeline{
     agent any
     stages{
         stage('Build-main'){
@@ -52,4 +53,5 @@ pipeline{
         }
         
     }
+}
 }
